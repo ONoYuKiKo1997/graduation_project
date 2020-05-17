@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_dish"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="100dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/tv_dish_name"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="菜品名称"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_taste"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="口味"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_hunsu"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:text="荤素"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="价格"
+        android:textSize="30sp"
+        android:textColor="@color/priceColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"/>
+</RelativeLayout>

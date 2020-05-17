@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/title">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="match_parent"
+                android:text="搜索"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/titleText"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <!--搜索框部分-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow"
+            android:elevation="10dp">
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:src="@drawable/top_bar_search"/>
+            <TextView
+                android:id="@+id/et_divide"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="#搜索菜品名称#"
+                android:textSize="20sp"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:text="菜品分类"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:text="荤素："
+        android:textSize="16sp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_hun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="荤菜"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="素菜"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_zhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="主食"
+            android:textSize="20sp"
+            />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:text="口味："
+        android:textSize="16sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_jia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="家常味"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_la"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="麻辣味"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_tian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="酸甜味"
+            android:textSize="20sp"
+        />
+
+        <Button
+            android:id="@+id/btn_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="咸鲜味"
+            android:textSize="20sp"
+            />
+    </GridLayout>
+</LinearLayout>
